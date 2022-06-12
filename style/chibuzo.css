@@ -1,0 +1,15 @@
+@import url(fontawesome-free-5.15.4-web/css/fontawesome.css);
+*,
+*::before,
+*::after{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: ;
+}
+body{
+    
+}
