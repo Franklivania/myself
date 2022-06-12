@@ -1,4 +1,5 @@
 @import url(fontawesome-free-5.15.4-web/css/fontawesome.css);
+@import url(googlefonts/NotoSans-Black.ttf);
 *,
 *::before,
 *::after{
@@ -11,5 +12,9 @@ html{
     font-family: ;
 }
 body{
-    
+    font-weight: 400;
+    @font-face {
+        font-family: ;
+        src: url(fontawesome-free-5);
+    };
 }
