@@ -1,0 +1,315 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heading__before{
+    height: 100vh;
+    background-image: url(../images/serene-sunset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.heading__before:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    filter: blur(2px);
+}
+.heading__main{ 
+    background-image: url(../images/serene-sunset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 900px;
+    margin-top: 100px;
+    margin-left: 230px;
+}
+.topbar ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* width: 100%; */
+    height: 10%;
+    font-weight: bold;
+}
+#top__head :nth-child(1){
+    margin-left: 16%;
+}
+#top__head :nth-child(2){
+    margin-left: 5%;
+}
+#top__head :nth-child(3){
+    margin-left: 5%;
+}
+#top__head :nth-child(4){
+    margin-left: 5%;
+}
+#top__head :nth-child(5){
+    margin-left: 5%;
+}
+#top__head a{
+    text-decoration: none;
+    position: relative;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+#top__head a:after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 3px;
+    width: 0;
+    left: -10%;
+    bottom: -5px;
+    transition: 0.3s;
+}
+#top__head a:hover:after{
+    width: 120%;
+}
+.main__texts{
+    border: #fff 2px solid;
+    margin-left: 400px;
+    margin-right: 3%;
+    margin-top: 6%;
+    z-index: 5;
+    padding: 20px;
+}
+.main__texts span{
+    display: flex;
+}
+.text__one{
+    color: rgb(255, 255, 255);
+}
+hr{
+    width: auto;
+    height: 15px;
+    background-color: #000;
+    border: #000;
+}
+.about-me{
+    height: 80vh;
+    display: grid;
+    background-image: 
+        radial-gradient(circle, rgba(0,0,0,0.036852240896358524) 0%, rgba(52,100,150,0.2049194677871149) 35%, rgba(111,88,196,0.1881127450980392) 100%),
+        url(../images/lid-open.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.about-me:after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    overflow: hidden; 
+    /* filter: blur(2px); */
+}
+fieldset{
+    border: #fff 5px solid;
+    margin: auto;
+    padding: 50px;
+    z-index: 1;
+    color: aliceblue;
+}
+#about legend{
+    margin-left: 20%;
+}
+.about__text{
+    font-size: 40px;
+}
+#intro{
+    font-size: 18px;
+    font-weight: 600;
+}
+#resume {
+    left: 40%;
+    top: 40%;
+    position: absolute;
+    width: 300px;
+    text-align: center;
+}
+
+#about a{
+    position: relative;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+}
+
+#resume::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 4px solid transparent;
+}
+
+#resume:hover::before {
+    animation: animate 0.5s linear forwards;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: #f00;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: #f00;
+        border-right-color: #f00;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: #f00;
+        border-right-color: #f00;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+#resume::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 4px solid transparent;
+}
+
+#resume:hover::after {
+    animation: animates 0.5s linear forwards;
+}
+
+@keyframes animates {
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #f00;
+    }
+
+    50% {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #f00;
+        border-left-color: #f00;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #f00;
+        border-left-color: #f00;
+    }
+}
+.certificate{
+    height: 90vh;
+    display: block;
+    /* margin: fixed; */
+}
+/* #ribbon{
+    height: inherit;
+    margin-left: 300px;
+    position: relative;
+} */
+.certi{
+    border: #000 5px solid;
+    margin:2% 2% 2% 2%;
+    padding: 50px;
+    /* z-index: 1; */
+    color: #000;
+    width: 100vw;
+    height: inherit;
+    /* position: absolute; */
+}
+#certificate legend{
+    font-size: 45px;
+    margin-left: 15%;
+}
+.php{
+    height: 300px;
+    width: 250px;
+    background-color: aqua;
+    box-shadow: -2px 2px 9px black;
+    margin-left: 7%;
+    margin-top: 4%;
+}
+.html{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(255, 97, 158);
+    box-shadow: -2px 2px 9px black;
+    margin-right: 8%;
+    margin-top: 4%;
+    display: flex;
+}
+.css{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(215, 248, 96);
+    box-shadow: -2px 2px 9px black;
+    margin-left: 7%;
+    margin-top: 4%;
+    display: flex;
+}
+.game-dev{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(99, 243, 131);
+    box-shadow: -2px 2px 9px black;
+    margin-left: 7%;
+    margin-top: 4%;
+    display: flex;
+}
+.responsive{
+    height: 300px;
+    width: 250px;
+    background-color: rgb(202, 161, 248);
+    box-shadow: -2px 2px 9px black;
+    margin-left: 7%;
+    margin-top: 4%;
+}
