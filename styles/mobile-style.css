@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@media all and ( max-width: 768px) {
+    .heading__before{
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 768px;
+    }
+    .heading__main{ 
+       
+    }
+    .topbar{
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        /* border: 3px solid #fff; */
+    }
+    #top__head{
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        transition: all .5s  ease-in-out;
+    }
+    #top__head::before,
+    #top__head::after{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 6px;
+        background: #fff;
+        border-radius: 5px;
+        transition: all .5s ease-in-out;
+    }
+    #top__head::before{
+        transform: translateY(-16px);
+    }
+    #top__head::after{
+        transform: translateY(16px);
+    }
+    /* animation */
+    .topbar.open #top__head{
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    .topbar.open #top__head::before{
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .topbar.open #top__head::after{
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+}

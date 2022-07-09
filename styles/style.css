@@ -7,6 +7,7 @@
 }
 html, body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
 }
 .heading__before{
     height: 100vh;
@@ -30,8 +31,11 @@ html, body{
     background-image: url(../images/serene-sunset.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-color: rgba(218, 215, 250, 0.8); */
     position: absolute;
     z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    /* border: #000 3px solid; */
     height: 450px;
     width: 900px;
     margin-top: 100px;
@@ -248,68 +252,275 @@ fieldset{
 }
 .certificate{
     height: 90vh;
-    display: block;
-    /* margin: fixed; */
+    /* width: 70vw; */
+    margin-bottom: 2%;
 }
-/* #ribbon{
-    height: inherit;
-    margin-left: 300px;
-    position: relative;
-} */
 .certi{
-    border: #000 5px solid;
+    border: rgb(0, 83, 161) 5px solid;
     margin:2% 2% 2% 2%;
     padding: 50px;
-    /* z-index: 1; */
     color: #000;
-    width: 100vw;
+    width: 95vw;
     height: inherit;
-    /* position: absolute; */
 }
 #certificate legend{
     font-size: 45px;
     margin-left: 15%;
 }
+.projects{
+    height: 130vh;
+}
 .php{
-    height: 300px;
-    width: 250px;
+    height: 200px;
+    width: 350px;
     background-color: aqua;
-    box-shadow: -2px 2px 9px black;
-    margin-left: 7%;
-    margin-top: 4%;
+    box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.5);
+    float: left;
+    transition: transform 0.5s;
 }
 .html{
-    height: 300px;
-    width: 250px;
+    height: 200px;
+    width: 350px;
     background-color: rgb(255, 97, 158);
-    box-shadow: -2px 2px 9px black;
-    margin-right: 8%;
-    margin-top: 4%;
-    display: flex;
+    box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-left: 4%;
+    transition: transform 0.5s;
 }
 .css{
-    height: 300px;
-    width: 250px;
+    height: 200px;
+    width: 350px;
     background-color: rgb(215, 248, 96);
-    box-shadow: -2px 2px 9px black;
-    margin-left: 7%;
-    margin-top: 4%;
-    display: flex;
+    box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-left: 4%;
+    transition: transform 0.5s;
 }
 .game-dev{
-    height: 300px;
-    width: 250px;
+    height: 200px;
+    width: 350px;
     background-color: rgb(99, 243, 131);
-    box-shadow: -2px 2px 9px black;
-    margin-left: 7%;
-    margin-top: 4%;
-    display: flex;
+    box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.5);
+    float: right;
+    margin-top: 2.7%;
+    margin-right: 18%;
+    transition: transform 0.5s;
 }
 .responsive{
-    height: 300px;
-    width: 250px;
+    height: 200px;
+    width: 350px;
     background-color: rgb(202, 161, 248);
-    box-shadow: -2px 2px 9px black;
-    margin-left: 7%;
-    margin-top: 4%;
+    box-shadow: -2px 2px 9px rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-top: 2.7%;
+    margin-left: 18%;
+    transition: transform 0.5s;
+}
+#php{
+    height: 180px;
+    width: 349.8px;
+    float: left;
+}
+#html{
+    height: 180px;
+    width: 349.8px;
+    float: left;
+}
+#css{
+    height: 180px;
+    width: 349.8px;
+    float: left;
+}
+#game-dev{
+    height: 180px;
+    width: 349.8px;
+    float: right;
+}
+#responsive{
+    height: 180px;
+    width: 349.8px;
+}
+.php:hover{
+    transform: scale(1.2);
+}
+.html:hover{
+    transform: scale(1.2);
+}
+.css:hover{
+    transform: scale(1.2);
+}
+.game-dev:hover{
+    transform: scale(1.2);
+}
+.responsive:hover{
+    transform: scale(1.2);
+}
+#project{
+    background-color: rgb(251, 255, 189);
+}
+#project fieldset{
+    border: rgb(32, 255, 69) 5px solid;
+    margin:2% 2% 2% 2%;
+    padding: 50px;
+    color: #000;
+    width: 95vw;
+    height: 130vh;
+}
+#project legend{
+    font-size: 45px;
+    margin-left: 70%;
+}
+#folio{
+    height: 220px;
+    width: 350px;
+}
+#one{
+    margin-left: 60%;
+    margin-top: -15%;
+}
+#port{
+    margin-left: 60%;
+   
+}
+#flix{
+    height: 220px;
+    width: 350px;
+    float: right;
+    margin-top: -6%;
+}
+#two{
+    margin-top: 20%;
+    margin-left: 15%;
+}
+#net{
+
+    margin-left: 15%
+}
+#dev{
+    height: 220px;
+    width: 350px;
+    margin-top: 9%;
+}
+#three{
+   margin-left: 60%;
+   margin-top: -14%;
+}
+#game{
+    margin-left: 60%;
+    
+}
+.projects fieldset a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.projects fieldset a:hover::before{
+    transform: translateY(8px);
+}
+.foot{
+    height: 80vh;
+    background-color: rgb(60, 60, 150);
+    position: relative;
+}
+.foot ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.foot ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 9%;
+}
+.foot ul :nth-child(1){
+    height: 50px;
+}
+.foot ul :nth-child(2){
+    margin-left: 3%;
+    height: 50px;
+}
+.foot ul :nth-child(3){
+    margin-left: 3%;
+    height: 50px;
+}
+.foot ul :nth-child(4){
+    margin-left: 3%;
+    height: 50px;
+}
+.foot ul :nth-child(5){
+    margin-left: 3%;
+    height: 50px;
+}
+.foot ul :nth-child(6){
+    margin-left: 3%;
+    height: 50px;
+}
+.foot ul :nth-child(7){
+    margin-left: 3%;
+    height: 50px;
+}
+.foot ul a i:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+.foot ul a i:active{
+    transform: translateY(2px);
+}
+#btn{
+    padding: 1%;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(74, 194, 4, 0.5);
+    float: right;
+    margin-top: -8.8%;
+    margin-right: 7%;
+}
+#btn:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+#btn:active{
+    transform: translateY(2px);
+}
+#arrow{
+    height: 30px;
+    border-radius: 50%;
+}
+ footer hr{
+    color:  rgb(91, 91, 150);
+    transform: rotateX(45deg);
+    height: 1px;
+    width: 80vw;
+    align-items: center;
+    justify-items: center;
+    margin-left: 8rem;
+}
+#message{
+    margin: 2% 0 0 3%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 0 0 3%;
+}
+form input, form textarea{
+    padding: 20px;
+    margin-bottom: 2px;
+    outline: none;
+    border: none;
+}
+form button{
+    background: #000;
+    color: rgb(60, 60, 150);
+    margin-top: 0.5rem;
+    padding: 2%;
+    width: 20%;
+    font-weight: bold;
+    font-size: 1rem;
 }

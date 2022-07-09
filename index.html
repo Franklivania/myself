@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobile-style.css">
     <link rel="stylesheet" href="styles/fontawesome/all.css">
     <title>Chibuzo Odigbo || Portforlio Site</title>
 </head>
 <body>
     
-    <div class="heading__before">
+    <div class="heading__before" id="head">
         <header class="heading__main">
 
             <div class="topbar">
@@ -18,8 +19,8 @@
                     <li><a href="">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#certificate">CERTIFICATES</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#foot">CONTACT</a></li>
                 </ul>
             </div>
 
@@ -64,7 +65,7 @@
                 <br>
                 <br>
 
-                <a href="styles/Chibuzo Resume.pdf" id="resume">Download my Resume</a>
+                <a href="styles/Chibuzo Resume.pdf" id="resume" target="_blank">Download my Resume</a>
         </fieldset>
     </div>
 
@@ -72,7 +73,6 @@
 
     <div class="certificate" id="certificate">
         <fieldset class="certi">
-            <!-- <img src="images/red ribbon.png" alt="" id="ribbon"> -->
             <legend>
                 <h3 class="cert">
                     Certifications
@@ -80,27 +80,100 @@
             </legend>
         
             <div class="php">
-
+                <a href="images/php.jpg" target="_blank"><img src="images/php.jpg" alt="" id="php"></a>
             </div>
 
             <div class="html">
-
+                <a href="images/html.jpg" target="_blank"><img src="images/html.jpg" alt="" id="html"></a>
             </div>
 
             <div class="css">
-
+                <a href="images/css.jpg" target="_blank"><img src="images/css.jpg" alt="" id="css"></a>
             </div>
 
-            <div class="game-dev">
+                <br>
 
+            <div class="game-dev">
+                <a href="images/game dev with js.jpg" target="_blank"><img src="images/game dev with js.jpg" alt="" id="game-dev"></a>
             </div>
 
             <div class="responsive">
-
+                <a href="images/responsive game dev.jpg" target="_blank"><img src="images/responsive game dev.jpg" alt="" id="responsive"></a>
             </div>
 
         </fieldset>
     </div>
 
+    <hr>
+
+    <div class="projects" id="project">
+        <fieldset>
+            <legend>
+                <h3 class="proj">
+                    Projects                    
+                </h3>
+            </legend>
+
+            <div class="port">
+                <img src="images/former porforlio project.png" alt="" id="folio">
+                <h3 id="one">
+                    A porforlio I had worked on
+                </h3> <br>
+                <a href="../portforlio/sleep.html" target="_blank" id="port">click to view</a>
+            </div>
+
+            <div class="net">
+                <img src="images/netflix clone.png" alt="" id="flix">
+                <h3 id="two">
+                    Just a netflix clone
+                </h3> <br>
+                <a href="../netflix clone/netflix.html" target="blank" id="net">click to view</a>
+            </div>
+
+            <div class="game">
+                <img src="images/game site.png" alt="" id="dev">
+                <h3 id="three">
+                    A basic game development landing page
+                </h3> <br> 
+                <a href="../JUST PRACTICE/index.html" target="_blank" id="game">click to view</a>
+            </div>
+
+        </fieldset>
+    </div>
+
+    <hr>
+
+    <footer class="foot" id="foot">
+        <br> <br>
+        <ul class="socialmedia">
+            <li><a href="https://twitter.com/OdigboF"><i class="fa-brands fa-twitter fa-3x"></i></a></li>
+            <li><a href="https://www.facebook.com/franklin.odigbo.1"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
+            <li><a href="https://www.instagram.com/franklivania/"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/franklin-odigbo-706886202/"><i class="fa-brands fa-linkedin-in fa-3x"></i></a></li>
+            <li><a href="https://www.reddit.com/user/Lord_Franklivania1"><i class="fa-brands fa-reddit-alien fa-3x"></i></a></li>
+            <li><a href="https://hashnode.com/@Franklivania"><i class="fa-brands fa-hashnode fa-3x"></i></a></li>
+            <li><a href="https://github.com/Franklivania"><i class="fa-brands fa-github fa-3x"></i></a></li>
+        </ul>
+
+        <hr>
+
+        <h2 id="message">Send a message...</h2>
+        <form class="contact-form" action="#">
+            <input class="name" type="text" placeholder="Name...">
+            <input class="email" type="email" placeholder="Email...">
+            <textarea class="msg" cols="50" rows="10" placeholder="Your Message..."></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+        <button type="button" id="btn">
+            <a href="#head"><img src="images/uparrow.png" alt="" id="arrow"></a>
+        </button>
+
+
+
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
