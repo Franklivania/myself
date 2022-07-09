@@ -524,3 +524,9 @@ form button{
     font-weight: bold;
     font-size: 1rem;
 }
+#copy{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+}
